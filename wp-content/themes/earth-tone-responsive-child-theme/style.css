@@ -37,12 +37,53 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* =Start From Here
 -------------------------------------------------------------- */
 
+body {
+    background-color:black;
+}
 
+#featured-image .fluid-width-video-wrapper {
+    margin-left: 0px;
+}
 
+#featured {
+    background-color: #825E00;
+    color: white;
+    margin-left: 25%;
+    position: absolute;
+}
 
+body.home #featured {
+    width:49.894%;
+}
 
+#logo {
+    display: none;
+}
 
+.widget-wrapper {
+    background-color: darkred;
+    color:white;
+    max-height: 900px;
+    overflow: scroll;
+}
 
+#text-4 {
+    display:none;
+}
+
+body.home .col-300 {
+    width: 21.915%;
+}
+
+body.home #home-widget-1 {
+    margin-left:-24%;
+    position:absolute;
+}
+
+body.home #home-widget-3 {
+    position: absolute; 
+    left: 78%;
+}
 
 /* =Media Print
     If you're working on a Child Theme, make sure that all
@@ -81,6 +122,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     body {}
 	
+    body.home #featured {
+        width:99.894%;
+        margin-left:0px;
+    }
+
+    body.home #home-widget-1 {
+        margin-left: 0px;
+        position: relative;
+    }
+
+    body.home #home-widget-3 {
+        left: 0px;
+        position: relative;
+    }
+
     .grid, 
 	.grid-right {
 	    float: none;
@@ -91,7 +147,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     }
 	
 	.home #widgets {
-		margin-top: 40px;
+		margin-top: 680px;
 	}
     
     .top-widget,
@@ -112,6 +168,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 @media screen and (max-width: 650px) {
 
     body {}
+
+    body.home #featured {
+        width:99.894%;
+        margin-left:0px;
+    }
+
+    .home #widgets {
+        margin-top: 650px;
+    }
 
     #logo {
 	    float: none;
